@@ -1,45 +1,29 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="/#/">{{config.portfolio.introduction.name}}</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/#/" active>Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog">Blog</a>
-                    </li>
-                </ul>
+<header-nav></header-nav>
+
+<div class="container-fluid p-0">
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+            <h1 class="mb-0">{{config.portfolio.introduction.name.first}}
+            <span class="text-primary">{{config.portfolio.introduction.name.last}}</span>
+            </h1>
+            <div class="subheading mb-5">
+                {{config.portfolio.introduction.address}}
+                <a ng-href="mailto:{{config.email}}">{{config.portfolio.introduction.email}}</a>
             </div>
+            <p class="mb-5">
+                {{config.portfolio.introduction.intro}}
+            </p>
+
+            <ul class="list-inline list-social-icons mb-0">
+                <li class="list-inline-item" ng-repeat="(i,social) in config.portfolio.introduction.socials">
+                    <a ng-href="{{social.link}}">
+                        <span class="fa-stack fa-1g">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-stack-1x fa-inverse" ng-class="social.faIcon"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
         </div>
-</nav>
-
-
-<!--<div class="container-fluid fcp-components">-->
-    <!--<div class="row" style="height: 15%">-->
-        <!--<div class="col-xs-12 col-md-12 d-flex justify-content-center">-->
-            <!--<div class="col-xs-12 col-md-10 d-flex align-items-center justify-content-between">-->
-                <!--<div class="col-xs-1 col-md-2"></div>-->
-                <!--<h2 class="text-center">{{config.portfolio.introduction.name}}</h2>-->
-                <!--<div class="col-xs-1 col-md-2">-->
-                    <!--<ul class="nav">-->
-                        <!--<li class="nav-item">-->
-                            <!--<a class="nav-link active" href="/#/" active>Home</a>-->
-                        <!--</li>-->
-                        <!--<li class="nav-item">-->
-                            <!--<a class="nav-link" href="/blog">Blog</a>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--<div class="row" style="height: 85%">-->
-
-    <!--</div>-->
-
-<!--</div>-->
+    </section>
+</div>

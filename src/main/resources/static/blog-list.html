@@ -1,0 +1,15 @@
+
+    <ul class="list-group" id="blogList">
+        <div class="input-group-item list-group-item-action flex-column">
+            <input id="search" type="text" class="form-control input-lg" placeholder="Search" onkeyup="filter()"/>
+        </div>
+        <div id="blogItems">
+            <a ng-href="#/blog/{{blogName}}" class="list-group-item list-group-item-action flex-column align-items-start" ng-repeat="(blogName,blog) in config.blog.posts">
+                <div class="d-flex justify-content-between">
+                    <h5 class="mb-1">{{blog.title}}</h5>
+                    <small>{{blog.date}}</small>
+                </div>
+                <p class="mb-1">{{blog.info}}</p>
+            </a>
+        </div>
+    </ul>

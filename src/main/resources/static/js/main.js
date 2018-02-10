@@ -10,6 +10,17 @@
                     templateUrl: "home.html",
                     controller: "HomeCtrl"
                 })
+
+                .when("/blog/:blogName", {
+                    templateUrl: "blog-post.html",
+                    controller: "BlogPostCtrl"
+                })
+
+                .when("/blog", {
+                     templateUrl: "blog.html",
+                     controller: "BlogCtrl"
+                })
+
                 .otherwise({
                     redirectTo: "/"
                 })

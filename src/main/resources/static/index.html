@@ -1,29 +1,45 @@
-<html lang="en-IN" ng-app="Portfolio">
+<html lang="en-IN" >
     <head>
         <title>Sahil Aggarwal</title>
-        <meta name="viewport" content="width=device-width, initial-scale=0.7  maximum-scale=0.7, user-scalable=no, shrink-to-fit=no">
 
-        <script src="js/jquery-2.1.4.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1. shrink-to-fit=no">
+
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
         <!-- bootstrap -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.min.js"></script>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 
         <!-- angular -->
-        <script src="js/angular.min.js"></script>
-        <script src="js/angular-route.min.js"></script>
+        <script src="vendor/angular/angular.min.js"></script>
+        <script src="vendor/angular/angular-route.min.js"></script>
+
+        <!--font-->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+
+        <script src="vendor/showdown/showdown.min.js"></script>
 
         <!-- app -->
         <script src="config.js"></script>
+        <script src="js/blog.js"> </script>
+        <script src="js/index.js"></script>
         <script src="js/main.js"></script>
         <script src="js/controllers.js"></script>
         <script src="js/services.js"></script>
         <script src="js/directives.js"></script>
         <link rel="stylesheet" href="css/main.css">
+
+
     </head>
 
-    <body>
+    <body ng-app="Portfolio" id="pageTop">
         <div ng-view></div>
     </body>
 </html>
