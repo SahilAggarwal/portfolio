@@ -15,11 +15,6 @@
         <version>1.5.10.RELEASE</version>
     </parent>
 
-    <properties>
-        <app.id>sahil-aggarwal</app.id>
-        <app.version>2</app.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
