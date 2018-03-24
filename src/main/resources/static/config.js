@@ -37,7 +37,14 @@ CONFIG = {
                     title: "Profiler using perf_event_open",
                     info: "Writing your own system profiler usinf perf_even_open syscall",
                     path: "blogs/profiling-perf-api.md"
+                },
+                "gcp-portfolio": {
+                    date: "24 March, 2018",
+                    title: "Deploy blog on GCP in 10 mins",
+                    info: "Brief steps to create your potfolio and deploy in GCP",
+                    path: "blogs/gcp-portfolio.md"
                 }
+
             }
         }
     }
