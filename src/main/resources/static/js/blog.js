@@ -21,10 +21,10 @@ function load(blogName) {
    $.ajax({
        url: path,
        success: function(data) {
-           $("#main").html(converter.makeHtml(data));
+           $("#postMain").html(converter.makeHtml(data));
        },
        error: function() {
-           $("#main").html(converter.makeHtml("## Not Found"));
+           $("#postMain").html(converter.makeHtml("## Not Found"));
        }
    })
 }

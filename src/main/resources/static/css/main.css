@@ -65,6 +65,13 @@ h2 {
   text-transform: uppercase;
 }
 
+@media (max-width: 600px) {
+  #postMain {
+    padding: 5px;
+    margin: 0 !important;
+  }
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;

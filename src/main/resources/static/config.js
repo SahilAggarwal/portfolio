@@ -26,23 +26,26 @@ CONFIG = {
         },
         blog: {
             posts: {
+                // this key name should be same as the .md file blogs/. for eg blogs/adding-tracepoints.md
                 "adding-tracepoints": {
                     date: "6th Sept, 2015",
                     title: "Tracepoints in Ftrace",
                     info: "Adding custom tracepoints in Ftrace",
-                    path: "blogs/adding-tracepoints.md"
                 },
                 "perf-api": {
-                    date: "15 Aug, 2015",
+                    date: "15th Aug, 2015",
                     title: "Profiler using perf_event_open",
-                    info: "Writing your own system profiler usinf perf_even_open syscall",
-                    path: "blogs/profiling-perf-api.md"
+                    info: "Writing your own system profiler using perf_even_open syscall",
                 },
                 "gcp-portfolio": {
-                    date: "24 March, 2018",
+                    date: "24th Mar, 2018",
                     title: "Deploy blog on GCP in 10 mins",
-                    info: "Brief steps to create your potfolio and deploy in GCP",
-                    path: "blogs/gcp-portfolio.md"
+                    info: "Brief steps to create your portfolio and deploy in GCP",
+                },
+                "mmdb": {
+                    date: "12th May, 2018",
+                    title: "Paper: Main Memory Database Systems",
+                    info: "Abridged notes on paper on Main Memory DB",
                 }
 
             }

@@ -1,5 +1,5 @@
 
-Even though [google's doc](`https://cloud.google.com/appengine/docs/standard/java/quickstart`) is really good, it took me quite some time to get it working :) 
+Even though [google's doc](https://cloud.google.com/appengine/docs/standard/java/quickstart) is really good, it took me quite some time to get it working :) 
 
 * Create app in google cloud console.  
 
