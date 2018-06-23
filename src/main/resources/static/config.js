@@ -46,6 +46,11 @@ CONFIG = {
                     date: "12th May, 2018",
                     title: "Paper: Main Memory Database Systems",
                     info: "Abridged notes on paper on Main Memory DB",
+                },
+                "concurrency-schemes": {
+                    date: "23rd Jun, 2018",
+                    title: "Paper: Concurrency Control vs 1000 cores [1]",
+                    info: "Looking at different concurrency control schemes"
                 }
 
             }
